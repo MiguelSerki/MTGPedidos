@@ -31,7 +31,8 @@ namespace BackStage
         public float PriceSelector()
         {
             var node = this.html.DocumentNode.SelectSingleNode("//*[@id='productinfoBody']/div/div[2]/div[1]/div[4]/div[2]/div[1]/span/form/h3/span");
-            return float.Parse(node.InnerText);
+            var value = float.Parse(node.InnerHtml, System.Globalization.CultureInfo.InvariantCulture);
+            return value;
         }
     }
 }

@@ -33,16 +33,11 @@ namespace MTGRosarioPedidos
                     Carta card = new Carta();
                     card.nombre = linkParser.NameSelector();
                     card.expansion = linkParser.ExpansionSelector();
-
-                    lista.listaCartas.Add(new Carta
-                    {
-                        cantidad = 1,
-                        nombre = linkParser.NameSelector(),
-                        expansion = linkParser.ExpansionSelector(),
-                        precio = linkParser.PriceSelector(),
-                    });
-
-                    dataGrid.Rows.Add(linkParser.NameSelector(), 1, linkParser.ExpansionSelector(), linkParser.PriceSelector());
+                    card.precio = linkParser.PriceSelector();
+                    card.cantidad = 1;
+                    card.link = textBox1.Text;
+                    lista.listaCartas.Add(card);
+                    dataGrid.Rows.Add(card.nombre, card.cantidad, card.expansion, card.precio);
                 }
                 else
                 {
@@ -85,7 +80,7 @@ namespace MTGRosarioPedidos
                     foreach (var card in listCards)
                     {
                         worksheet.Cell(excelRow, 2).Value = card.nombre;
-                        worksheet.Cell(excelRow, 2).Hyperlink = new XLHyperlink(@"http://www.mtgmintcard.com/mtg/singles/dom/eng-reg/teferi-hero-of-dominaria");
+                        worksheet.Cell(excelRow, 2).Hyperlink = new XLHyperlink(card.link);
                         worksheet.Cell(excelRow, 4).Value = card.expansion;
                         worksheet.Cell(excelRow, 3).Value = dataGrid.Rows[localRow].Cells[1].Value;
                         worksheet.Cell(excelRow, 7).Value = card.precio;
