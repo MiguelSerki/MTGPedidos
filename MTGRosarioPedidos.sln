@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGRosarioPedidos", "MTGRosarioPedidos\MTGRosarioPedidos.csproj", "{002108BD-CF44-4E00-A530-AEB9DA29D71D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackStage", "BackStage\BackStage.csproj", "{14684DC3-1FE5-46E2-A34C-5496F5C3B3DB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{9C1192CF-10EB-4BF9-94B0-A5D0D2768EF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{002108BD-CF44-4E00-A530-AEB9DA29D71D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{002108BD-CF44-4E00-A530-AEB9DA29D71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{002108BD-CF44-4E00-A530-AEB9DA29D71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{002108BD-CF44-4E00-A530-AEB9DA29D71D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14684DC3-1FE5-46E2-A34C-5496F5C3B3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14684DC3-1FE5-46E2-A34C-5496F5C3B3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14684DC3-1FE5-46E2-A34C-5496F5C3B3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14684DC3-1FE5-46E2-A34C-5496F5C3B3DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C1192CF-10EB-4BF9-94B0-A5D0D2768EF3}.Debug|Any CPU.ActiveCfg = Debug
+		{9C1192CF-10EB-4BF9-94B0-A5D0D2768EF3}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D28ED47A-681F-4046-A03F-07AA057C99BE}
+	EndGlobalSection
+EndGlobal
